@@ -17,6 +17,10 @@
 		5808AFBF1DA048F5001AEA61 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5808AFBB1DA048F5001AEA61 /* NotoSans-BoldItalic.ttf */; };
 		5808AFC01DA048F5001AEA61 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5808AFBC1DA048F5001AEA61 /* NotoSans-Italic.ttf */; };
 		5808AFC11DA048F5001AEA61 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5808AFBD1DA048F5001AEA61 /* NotoSans-Regular.ttf */; };
+		5827BE791DA1CF4B00D2B461 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5827BE781DA1CF4B00D2B461 /* MaterialView.swift */; };
+		5827BE7C1DA1CF9400D2B461 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5827BE7B1DA1CF9400D2B461 /* Constants.swift */; };
+		5827BE801DA1D35400D2B461 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5827BE7F1DA1D35400D2B461 /* MaterialButton.swift */; };
+		5827BE821DA1D62D00D2B461 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5827BE811DA1D62D00D2B461 /* MaterialTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		5808AFBB1DA048F5001AEA61 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		5808AFBC1DA048F5001AEA61 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		5808AFBD1DA048F5001AEA61 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		5827BE781DA1CF4B00D2B461 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		5827BE7B1DA1CF9400D2B461 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5827BE7F1DA1D35400D2B461 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		5827BE811DA1D62D00D2B461 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 		5808AF9F1DA04886001AEA61 /* showcase */ = {
 			isa = PBXGroup;
 			children = (
+				5827BE7A1DA1CF8800D2B461 /* Util */,
 				5808AFB91DA048C2001AEA61 /* Resources */,
 				5808AFB81DA048B3001AEA61 /* Model */,
 				5808AFB61DA048A1001AEA61 /* View */,
@@ -89,6 +98,9 @@
 			children = (
 				5808AFA41DA04886001AEA61 /* Main.storyboard */,
 				5808AFAC1DA04886001AEA61 /* LaunchScreen.storyboard */,
+				5827BE781DA1CF4B00D2B461 /* MaterialView.swift */,
+				5827BE7F1DA1D35400D2B461 /* MaterialButton.swift */,
+				5827BE811DA1D62D00D2B461 /* MaterialTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -109,6 +121,14 @@
 				5808AFBD1DA048F5001AEA61 /* NotoSans-Regular.ttf */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		5827BE7A1DA1CF8800D2B461 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5827BE7B1DA1CF9400D2B461 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,9 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5827BE7C1DA1CF9400D2B461 /* Constants.swift in Sources */,
 				5808AFA31DA04886001AEA61 /* ViewController.swift in Sources */,
+				5827BE801DA1D35400D2B461 /* MaterialButton.swift in Sources */,
 				5808AFA91DA04886001AEA61 /* showcase.xcdatamodeld in Sources */,
 				5808AFA11DA04886001AEA61 /* AppDelegate.swift in Sources */,
+				5827BE791DA1CF4B00D2B461 /* MaterialView.swift in Sources */,
+				5827BE821DA1D62D00D2B461 /* MaterialTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +378,7 @@
 				5808AFB41DA04886001AEA61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
