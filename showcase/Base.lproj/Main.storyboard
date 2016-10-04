@@ -65,6 +65,9 @@
                                                 <state key="normal" title="Facebook Login">
                                                     <color key="titleColor" red="0.9689972778" green="0.99047444009999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="fbBtnPressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yBb-tF-3iB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
