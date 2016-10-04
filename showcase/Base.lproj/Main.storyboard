@@ -119,7 +119,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="tsf-0m-eZa" secondAttribute="trailing" constant="20" id="Bdw-Ro-fhd"/>
-                                    <constraint firstItem="vtx-6L-9IK" firstAttribute="top" secondItem="ko6-xE-sOm" secondAttribute="top" constant="8" id="PQX-bc-gER"/>
+                                    <constraint firstItem="vtx-6L-9IK" firstAttribute="top" secondItem="ko6-xE-sOm" secondAttribute="top" constant="20" id="PQX-bc-gER"/>
                                     <constraint firstItem="DcN-bD-fVU" firstAttribute="top" secondItem="tsf-0m-eZa" secondAttribute="bottom" constant="20" id="UKq-w0-pJL"/>
                                     <constraint firstItem="DcN-bD-fVU" firstAttribute="height" secondItem="tsf-0m-eZa" secondAttribute="height" id="WJn-wR-egz"/>
                                     <constraint firstItem="DcN-bD-fVU" firstAttribute="trailing" secondItem="tsf-0m-eZa" secondAttribute="trailing" id="Zeu-IA-hSD"/>

@@ -21,6 +21,9 @@
 		5827BE7C1DA1CF9400D2B461 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5827BE7B1DA1CF9400D2B461 /* Constants.swift */; };
 		5827BE801DA1D35400D2B461 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5827BE7F1DA1D35400D2B461 /* MaterialButton.swift */; };
 		5827BE821DA1D62D00D2B461 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5827BE811DA1D62D00D2B461 /* MaterialTextField.swift */; };
+		586E978B1DA33A220073E5B7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586E97881DA33A220073E5B7 /* Bolts.framework */; };
+		586E978C1DA33A220073E5B7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586E97891DA33A220073E5B7 /* FBSDKCoreKit.framework */; };
+		586E978D1DA33A220073E5B7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586E978A1DA33A220073E5B7 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		5827BE7B1DA1CF9400D2B461 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5827BE7F1DA1D35400D2B461 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		5827BE811DA1D62D00D2B461 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		586E97881DA33A220073E5B7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		586E97891DA33A220073E5B7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		586E978A1DA33A220073E5B7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586E978B1DA33A220073E5B7 /* Bolts.framework in Frameworks */,
+				586E978C1DA33A220073E5B7 /* FBSDKCoreKit.framework in Frameworks */,
+				586E978D1DA33A220073E5B7 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +81,7 @@
 		5808AF9F1DA04886001AEA61 /* showcase */ = {
 			isa = PBXGroup;
 			children = (
+				586E97871DA33A160073E5B7 /* Frameworks */,
 				5827BE7A1DA1CF8800D2B461 /* Util */,
 				5808AFB91DA048C2001AEA61 /* Resources */,
 				5808AFB81DA048B3001AEA61 /* Model */,
@@ -129,6 +139,16 @@
 				5827BE7B1DA1CF9400D2B461 /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		586E97871DA33A160073E5B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				586E97881DA33A220073E5B7 /* Bolts.framework */,
+				586E97891DA33A220073E5B7 /* FBSDKCoreKit.framework */,
+				586E978A1DA33A220073E5B7 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,6 +358,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XD7G54ZSZ3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/showcase",
+				);
 				INFOPLIST_FILE = showcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rm.showcase;
@@ -351,6 +375,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XD7G54ZSZ3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/showcase",
+				);
 				INFOPLIST_FILE = showcase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rm.showcase;
